@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:  #d355d3 ;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .profile {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .general-info, .other-info {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 700px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+            color: #e01616;
+        }
+        .info-group {
+            margin-bottom: 15px;
+        }
+        .info-group span {
+            display: block;
+            font-weight: bold;
+        }
+        .split  {display: block
+            ;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="haha.jpg" alt="Kirstine">
+            <h2>Kirstine A. Sumalinog</h2>
+            <p><strong>Student ID:</strong> C23-0115</p>
+            <p><strong>Course:</strong> BSIT</p>
+            <p><strong>Year:</strong> 2nd Year</p>
+        </div>
+        <div class="split">
+            <div class="general-info">
+                <h2>General Information</h2>
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td><strong>First name</strong></td>
+                            <td>Kirstine</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Last name</strong></td>
+                            <td>Sumalinog</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Birthday</strong></td>
+                            <td>March 15, 2005</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gender</strong></td>
+                            <td>Female</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <div class="other-info">
+                <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">A dedicated and ambitious student, currently enrolled at Christ the King College, pursuing Bachelor of Science in Information Technology.</div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">Profile Content...</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
